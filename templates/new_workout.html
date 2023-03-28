@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<h1>Create New Workout</h1>
+
+<form action="/new_workout" method="post">
+    <label for="workout_name">Workout Name:</label>
+    <input type="text" id="workout_name" name="workout_name" required><br><br>
+    
+    <p>Are you working out for strength or size?</p>
+    <input type="radio" id="strength" name="reps" value="strength" required>
+    <label for="strength">Strength</label><br>
+    <input type="radio" id="size" name="reps" value="size" required>
+    <label for="size">Size</label><br>
+
+    <hr>
+
+    <p>Pick your first leg workout:</p>
+    <input type="radio" id="squats" name="leg_1" value="squats" required>
+    <label for="squats">Squats</label><br>
+    <input type="radio" id="deadlifts" name="leg_1" value="deadlifts" required>
+    <label for="deadlifts">Deadlifts</label><br>
+
+    <p>Pick your leg workout accessory movement:</p>
+    <input type="radio" id="lunges" name="leg_2" value="lunges" required>
+    <label for="lunges">Lunges</label><br>
+    <input type="radio" id="leg-press" name="leg_2" value="leg-press" required>
+    <label for="leg-press">Leg Press</label><br>
+
+    <hr>
+
+    <p>Pick your first push workout:</p>
+    <input type="radio" id="press-ups" name="push_1" value="press-ups" required>
+    <label for="press-ups">Press-ups</label><br>
+    <input type="radio" id="bench-press" name="push_1" value="bench-press" required>
+    <label for="bench-press">Bench Press</label><br>
+
+    <p>Pick your push workout accessory movement:</p>
+    <input type="radio" id="triceps-kickbacks" name="push_2" value="triceps-kickbacks" required>
+    <label for="triceps-kickbacks">Triceps Kickbacks</label><br>
+    <input type="radio" id="band-pushdowns" name="push_2" value="band-pushdowns" required>
+    <label for="band-pushdowns">Band Pushdowns</label><br>
+
+    <hr>
+
+    <p>Pick your first pull workout:</p>
+    <input type="radio" id="pullups" name="pull_1" value="pullups" required>
+    <label for="pullups">Pullups</label><br>
+    <input type="radio" id="rows" name="pull_1" value="rows" required>
+    <label for="rows">Rows</label><br>
+
+    <p>Pick your pull workout accessory movement:</p>
+    <input type="radio" id="bicep-curls" name="pull_2" value="bicep-curls" required>
+    <label for="bicep-curls">Bicep Curls</label><br>
+    <input type="radio" id="dumbbell-rows" name="pull_2" value="dumbbell-rows" required>
+    <label for="dumbbell-rows">Dumbbell Rows</label><br>
+
+    <hr>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+{% endblock %}

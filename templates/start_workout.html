@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Workout Guide
+{% endblock %}
+
+{% block main %}
+    <h1>Workout Guide</h1>
+    <hr>
+    <p><strong>{{ workout[0].workout_name }}</strong> - made by <strong>{{ workout[0].username }}</strong></p>
+    <hr>
+    <p><strong>Leg Exercise 1:</strong> {{ workout[0].leg_1 }} for 3 x {{ workout[0].reps }}</p>
+    <p><strong>Leg Exercise 2:</strong> {{ workout[0].leg_2 }} for 3 x {{ workout[0].reps }}</p>
+    <hr>
+    <p><strong>Push Exercise 1:</strong> {{ workout[0].push_1 }} for 3 x {{ workout[0].reps }}</p>
+    <p><strong>Push Exercise 2:</strong> {{ workout[0].push_2 }} for 3 x {{ workout[0].reps }}</p>
+    <hr>
+    <p><strong>Pull Exercise 1:</strong> {{ workout[0].pull_1 }} for 3 x {{ workout[0].reps }}</p>
+    <p><strong>Pull Exercise 2:</strong> {{ workout[0].pull_2 }} for 3 x {{ workout[0].reps }}</p>
+    <hr>
+{% endblock %}
