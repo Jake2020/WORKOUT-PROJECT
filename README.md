@@ -1,8 +1,15 @@
 # JAKE'S WORKOUT PROJECT - CS50 FINAL PROJECT
 
+## Project Requirements:
+The climax of this course is its final project. The final project is your opportunity to take your newfound savvy with programming out for a spin and develop your very own piece of software. So long as your project draws upon this course’s lessons, the nature of your project is entirely up to you. You may implement your project in any language(s). You are welcome to utilize infrastructure other than the CS50 Codespace. All that we ask is that you build something of interest to you, that you solve an actual problem, that you impact your community, or that you change the world. Strive to create something that outlives this course.
+
+## My Project:
+
 #### Video Demo: https://www.youtube.com/watch?v=tGV3E-3xHKE
 
 #### DESCRIPTION: My project is a website which allows the user to create an account, then create and save full body Push, Pull, Legs workout plans. This is achieved by prompting the user to chose from a selection of exercises and rep ranges which will generate a workout plan. This plan will be saved to a database so the user can come back and repeat the workout in future. There is also the option to view workouts created by other users and do one of their workouts instead.
+
+Please ignore the very suspect HTML/CSS as I was focusing my efforts on the backend functionality for this project. 
 
 ###### ######################################################################
 ## Quick Start Guide:
